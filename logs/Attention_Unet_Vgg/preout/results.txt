@@ -1,0 +1,1 @@
+The prediction results with epoch18_total_loss0.2662_val_loss0.4312.pth: mean_acc: 0.955 | mean_iou: 0.805 | mean_dice: 0.876
