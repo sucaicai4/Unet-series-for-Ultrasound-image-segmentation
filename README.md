@@ -11,7 +11,8 @@
   1. 基础U-net模型，VGG风格Encoder，可迁移PyTorch VGG16模型权重，Maxpooling下采样，UpsamplingBilinear上采样；
   2. 基础U-net模型，VGG风格Encoder，Conv下采样，UpsamplingBilinear上采样；
   3. Attention-Unet，VGG风格Encoder，Maxpooling下采样，UpsamplingBilinear上采样；
-  4. 深监督Attention-Unet，VGG风格Encoder，Maxpooling下采样，UpsamplingBilinear上采样；
+  ![attunet](https://github.com/sucaicai4/Unet-series-for-Ultrasound-image-segmentation/blob/main/imgs/attunet.jpg)
+  5. 深监督Attention-Unet，VGG风格Encoder，Maxpooling下采样，UpsamplingBilinear上采样；
 - ***可在一块 GTX 1050Ti 上进行训练验证；***
 
 ## 测试指标结果
