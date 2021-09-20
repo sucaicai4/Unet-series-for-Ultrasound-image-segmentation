@@ -18,7 +18,7 @@
 
 |                Model                 | m-Dice | m-IOU | m-Acc | Resolution | Params Size(MB) |
 | :----------------------------------: | :----: | :---: | :---: | :--------: | :-------------: |
-|        Base U-net(Maxpooling)        |        |       |       |  512*512   |                 |
+|        Base U-net(Maxpooling)        | 0.835  | 0.759 | 0.948 |  512*512   |      12.8       |
 |           Base U-net(Conv)           |        |       |       |  512*512   |                 |
 |            Attention-Unet            | 0.876  | 0.805 | 0.955 |  512*512   |      13.2       |
 | Attention-Unet with Deep Supervision |        |       |       |  512*512   |                 |
