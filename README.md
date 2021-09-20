@@ -1,28 +1,43 @@
+
+
 # Ultrasound image segmentation using U-net series 
 
-![label_0](https://github.com/sucaicai4/Unet-series-for-Ultrasound-image-segmentation/blob/main/imgs/label_0.png)
+ <div align="center"> <img src="https://github.com/sucaicai4/Unet-series-for-Ultrasound-image-segmentation/blob/main/imgs/label_0.png" /> </div>
 
-![label_4](https://github.com/sucaicai4/Unet-series-for-Ultrasound-image-segmentation/blob/main/imgs/label_12.png)
+ <div align="center"> <img src="https://github.com/sucaicai4/Unet-series-for-Ultrasound-image-segmentation/blob/main/imgs/label_4.png" /> </div>
 
-![label_12](https://github.com/sucaicai4/Unet-series-for-Ultrasound-image-segmentation/blob/main/imgs/label_4.png)
+ <div align="center"> <img src="https://github.com/sucaicai4/Unet-series-for-Ultrasound-image-segmentation/blob/main/imgs/label_12.png" /> </div>
 
-- ***搭建轻量级U-net模型，权重文件<15MB,资源占用少***；
-- ***所使用的U-net模型包括：***
+
+
+- ***搭建轻量级 U-net 模型，权重文件 < 15MB,资源占用少***；
+
+- ***所使用的 U-net 模型包括：***
+
   1. 基础U-net模型，VGG风格Encoder，可迁移PyTorch VGG16模型权重，Maxpooling下采样，UpsamplingBilinear上采样；
+
   2. 基础U-net模型，VGG风格Encoder，Conv下采样，UpsamplingBilinear上采样；
+
   3. Attention-Unet，VGG风格Encoder，Maxpooling下采样，UpsamplingBilinear上采样；
-  ![attunet](https://github.com/sucaicai4/Unet-series-for-Ultrasound-image-segmentation/blob/main/imgs/attunet.jpg)
-  5. 深监督Attention-Unet，VGG风格Encoder，Maxpooling下采样，UpsamplingBilinear上采样；
+
+     <div align="center"> <img src="https://github.com/sucaicai4/Unet-series-for-Ultrasound-image-segmentation/blob/main/imgs/attunet.jpg" /> </div>
+
+  4. 深监督Attention-Unet，VGG风格Encoder，Maxpooling下采样，UpsamplingBilinear上采样；
+
+   <div align="center"> <img src="https://github.com/sucaicai4/Unet-series-for-Ultrasound-image-segmentation/blob/main/imgs/att_ds.jpg" /> </div>
+
 - ***可在一块 GTX 1050Ti 上进行训练验证；***
 
 ## 测试指标结果
 
 |                Model                 | m-Dice | m-IOU | m-Acc | Resolution | Params Size(MB) |
 | :----------------------------------: | :----: | :---: | :---: | :--------: | :-------------: |
-|        Base U-net(Maxpooling)        | 0.835  | 0.759 | 0.948 |  512*512   |      12.8       |
-|           Base U-net(Conv)           |        |       |       |  512*512   |                 |
+|       Base U-net (Maxpooling)        | 0.835  | 0.759 | 0.948 |  512*512   |      12.8       |
+|          Base U-net (Conv)           | 0.846  | 0.773 | 0.954 |  512*512   |      14.1       |
 |            Attention-Unet            | 0.876  | 0.805 | 0.955 |  512*512   |      13.2       |
-| Attention-Unet with Deep Supervision |        |       |       |  512*512   |                 |
+| Attention-Unet with Deep Supervision | 0.853  | 0.778 | 0.954 |  512*512   |      13.2       |
+
+<div align="center"> <img src="https://github.com/sucaicai4/Unet-series-for-Ultrasound-image-segmentation/blob/main/imgs/models.png" /> </div>
 
 ## 数据集
 
@@ -163,3 +178,4 @@ tensorboard --logdir="modelname"
 ```
 
 来查看网络结构。
+
